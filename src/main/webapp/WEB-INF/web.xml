@@ -28,7 +28,7 @@
 	<servlet-mapping>
 		<servlet-name>appServlet</servlet-name>
 		<url-pattern>/</url-pattern>
-		<url-pattern>/test</url-pattern>
+		<url-pattern>/login</url-pattern>
 	</servlet-mapping>
 
 </web-app>

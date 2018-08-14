@@ -18,21 +18,10 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 public class MyExceptionHandler extends ResponseEntityExceptionHandler {
     private static Logger logger = LoggerFactory.getLogger(MyExceptionHandler.class);
 
-	@Autowired
+    @Autowired
 	MessageSource messages;
 
-	/**
-     * 全てのExceptionが発生した際、事前に共通処理を行う。
-     *
-     * @param ex Exception
-     * @param body HTTPレスポンスメッセージボディ
-     * @param headers HTTPレスポンスヘッダ
-     * @param status HTTPレスポンスステータス
-     * @param request HTTPリクエスト
-     * @return エクセプションの情報を持ったレスポンス
-     *
-     */
-    @Override
+	@Override
     protected ResponseEntity<Object> handleExceptionInternal(Exception ex, Object body, HttpHeaders headers,
             HttpStatus status, WebRequest request) {
 
